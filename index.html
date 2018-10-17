@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,7 +18,7 @@
 </head>
 
 <body class="big-container" background="https://recharity.ca/wp-content/uploads/2014/03/Black-Box-black-box.jpg">
-    <div class="card m-3"> <b>
+    <div class="card m-5"> <b>
             <h1 class="text-center">Rental Agency</h1>
         </b>
         <div class="row">
@@ -30,13 +30,13 @@
                             width="220" height="150"></div>
                     <div>
                         <p class="">
-                            <p class="pr-3">
+                            <p class="pl-3">
                                 <b>Price:</b> $1500.00 for a weekend
                             </p>
-                            <p class="pr-3">
+                            <p class="pl-3">
                                 <b>Stock:</b> 1
                             </p>
-                            <p class="pr-3"><b>Description:</b> Rolls-Royce Motor Cars Rancho Mirage proudly offers
+                            <p class="pl-3"><b>Description:</b> Rolls-Royce Motor Cars Rancho Mirage proudly offers
                                 this Brand New 2019
                                 Rolls-Royce
                                 Wraith in Arctic White over a Arctic White/Black interior with 11 miles. The Wraith is
@@ -182,14 +182,14 @@
                             width="220" height="150"></div>
                     <div>
                         <p class="pr-3">
-                            <b>Price:</b> $1700.00 for a weeken$1500.00 for a weekendd
+                            <b>Price:</b> $1700.00 for a weekend
                         </p>
                         <p class="pr-3">
                             <b>Stock:</b> 3
                         </p>
                         <p class="pr-3">
                             <b>Description:</b> When you slide into the driver’s seat of the 2019 Jaguar XJ50 Limited
-                            Edition you will have a choice
+                            Edition you will have a
                             between a 340-horsepower 3.0-liter supercharged V-6 engine that can be paired with
                             rear-wheel drive or
                             all-wheel drive and a power-hungry 470-horsepower 5.0-liter supercharged V-8 with
@@ -204,26 +204,27 @@
             <div class="w-100"></div>
         </div>
     </div>
-
     <script>
-        <h2>Rolls Royce 2019</h2>
-            <div class="{{Rolls Royce}} d-flex">
+        <h2>{{ name }}</h2>
+            <div class="d-flex">
                 <div>
                     <img src="{{imageURL}}"
-                        width="220" height="150"></div>
+                        width="220" height="150">
+                </div>
                     <div>
-                        <p class=""></div>
-                        <p class="{{price}}">
-                            <b>Price:</b>
-                        </p>
-                        <p class="{{stock}}">
-                            <b>Stock:</b> 1
+                        <p class="">
+                            <p class="pr-3">
+                                <b>Price: $</b> {{ price }}
                             </p>
-                        <p class="{{description}}">
+                            <p class="pr-3">
+                                <b>Stock:</b> {{ stock }}
+                            </p>
+                            <p class="pr-3"><b>Description:</b> {{ description }} </p>
                         </p>
                     </div>
                 </div>
+            </div>
     </script>
 </body>
 
-</html>
+</html> -->

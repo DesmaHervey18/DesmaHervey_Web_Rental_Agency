@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js" defer></script>
+    <link rel="style.css">
+    <script src="./data.js" defer></script>
+    <script src="./javascript.js" defer></script>
+
+</head>
+
+<body class="big-container" background="https://recharity.ca/wp-content/uploads/2014/03/Black-Box-black-box.jpg">
+    <div class="card m-3 p-3" id="template"> <b>
+
+    </div>
+
+    <script id="here" type="text/x-handlebars-template">
+        <h2>{{ name }}</h2>
+            <div class="d-flex">
+                <div>
+                    <img src="{{imageURL}}" width="220" height="150">
+                </div>
+                    <div>
+                        <p class="pl-3">
+                            <b>Price: $</b> {{ price }}
+                        </p>
+                        <p class="pl-3">
+                            <b>Stock:</b> {{ stock }}
+                        </p>
+                        <p class="pl-3">
+                            <b>Description:</b> {{ description }}
+                        </p>
+                    </div>
+                </div>
+            // </div>
+    </script>
+</body>
