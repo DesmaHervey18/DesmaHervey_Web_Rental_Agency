@@ -1,10 +1,18 @@
 .big-container {
     display: flex;
     justify-content: center;
-    background: padding 10px;
+    background: padding 20px;
 }
 
 .Rolls Royce {
     display: flex;
     padding: 3px;
+}
+
+.main {
+    background-image: center;
+}
+
+.card {
+    height: 500px;
 }
