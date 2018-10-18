@@ -27,23 +27,22 @@
     </div>
 
     <script id="here" type="text/x-handlebars-template">
-        <h2>{{ name }}</h2>
-            <div class="d-flex">
-                <div>
-                    <img src="{{imageURL}}" width="220" height="150">
-                </div>
-                    <div>
-                        <p class="pl-3">
-                            <b>Price: $</b> {{ price }}
-                        </p>
-                        <p class="pl-3">
-                            <b>Stock:</b> {{ stock }}
-                        </p>
-                        <p class="pl-3">
-                            <b>Description:</b> {{ description }}
-                        </p>
-                    </div>
-                </div>
-            // </div>
+        <h2>{{ title }}</h2>
+        <!-- <h3>{{ imageURL }}</h3> -->
+        <div class="d-flex">
+            <img src="{{ imageURL }}" width="220" height="150">
+        <div>
+        <p class="pl-3">
+            <b>Price: ${{ price }}</b>
+        </p>
+        <p class="pl-3">
+            <b>Stock: {{ stock }}</b>
+        </p>
+        <p class="pl-3">
+            <b>Description: {{ description }}</b>
+        </p>
+    </div>
+    </div>
+    </div>
     </script>
 </body>

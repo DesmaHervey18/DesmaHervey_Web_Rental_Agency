@@ -1,9 +1,8 @@
 const PAGE_DATA = {
     car: [
         {
-            imageURL:
-                "http://6d6fc150d328228e74ba-78cbc718e4c8c7b0015d47db7822e2aa.r78.cf1.rackcdn.com/SCA665C5XHUX86799/5e417a269cabf7ff3a9037dcc23ce37e.jpg",
             name: "Rolls Royce 2019",
+            imageURL: "images/Rolls.jpg",
             price: 1500,
             stock: 1,
             description:
@@ -13,8 +12,7 @@ const PAGE_DATA = {
                 an 8-Speed Automatic Transmission."
         },
         {
-            imageURL:
-                "http://mycars2016.com/wp-content/uploads/2019-Nissan-Altima1-660x300.jpg",
+            imageURL: "images/Altima.jpg",
             name: "Altima 2019",
             description:
                 "This time around the Altima is expected to use Renault’s much newer CMF-CD chassis.\
@@ -26,8 +24,7 @@ const PAGE_DATA = {
             stock: 1
         },
         {
-            imageURL:
-                "https://686d583e054646acba41-291bf29b6307478a05118664430c5cb6.ssl.cf1.rackcdn.com/WDDSJ4EB9KN702529/397b9251f1bd552ab602b25ef8586189.jpg",
+            imageURL: "images/Mercedes.jpg",
             name: "Mercedes Benz 2019",
             description:
                 "Mercedes-Benz calls the CLS a “4-door coupe,”and while other automakers have applied\
@@ -42,7 +39,7 @@ const PAGE_DATA = {
             stock: 2
         },
         {
-            imageURL: "https://i.ytimg.com/vi/VoPeFLqw1g0/maxresdefault.jpg",
+            imageURL: "images/Lamborgini.jpg",
             name: "Lamborghini Terzo Millennio 2019",
             description:
                 "Lamborghini also intends to make the supercapacitors out of carbon-fiber panels that can be\
@@ -54,8 +51,7 @@ const PAGE_DATA = {
             stock: 2
         },
         {
-            imageURL:
-                "http://biodrones.ca/wp-content/uploads/2018/02/hqdefault-1441.jpg",
+            imageURL: "images/Ferrari..jpg",
             name: "Ferrari F80 2019",
             description:
                 "Ferrari F80 Concept. The Ferrari F80 Concept is a hybrid concept supercar manufactured\
@@ -65,9 +61,8 @@ const PAGE_DATA = {
             stock: 3
         },
         {
-            imageURL:
-                "https://blogmedia.dealerfire.com/wp-content/uploads/sites/380/2018/06/2019-Jaguar-XJ50-Limited-Edition-Rear_o.jpg",
             name: "Jaquar XJ50 2019",
+            imageURL: "images/Jaquar.jpg",
             description:
                 "When you slide into the driver’s seat of the 2019 Jaguar XJ50 Limited Edition you will have a choice\
                 between a 340-horsepower 3.0-liter supercharged V-6 engine that can be paired with rear-wheel drive or\
