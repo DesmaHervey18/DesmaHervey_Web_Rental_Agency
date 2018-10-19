@@ -13,6 +13,8 @@ body {
     margin-right: 20px;
 }
 
+.move-up {
+}
 .Rolls Royce {
     display: flex;
     padding: 3px;
@@ -37,4 +39,18 @@ body {
 .main-container {
     background: none;
     color: white;
+}
+
+#topLink {
+    color: white;
+    background-color: #343a40;
+    padding: 15px;
+    border-radius: 3%;
+}
+
+#submitLink {
+    color: white;
+    background-color: #343a40;
+    padding: 15px;
+    border-radius: 3%;
 }
