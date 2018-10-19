@@ -48,9 +48,16 @@ body {
     border-radius: 3%;
 }
 
-#submitLink {
+/* #submitLink {
     color: white;
     background-color: #343a40;
     padding: 15px;
     border-radius: 3%;
+} */
+#submit-group{
+    color: white;
+    background-color: #343a40;
+    padding: 15px;
+    border-radius: 3%;
+}
 }

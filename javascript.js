@@ -15,4 +15,22 @@ function carTemplate() {
         .querySelector("#template")
         .insertAdjacentHTML("beforeend", content);
 }
+
 carTemplate();
+
+function refreshpage() {
+    location.reload();
+}
+
+function Thankyou() {
+    var payment = document.forms["payment-type"];
+    var firstInput = payment["first-name"];
+    var firstname = firstInput.value;
+    var lastInput = payment["last-name"];
+    var lastname = lastInput.value;
+    console.log(lastname);
+    var formContainer = document.querySelector(".form-container");
+    formContainer.innerHTML = `Thank You ${firstname} ${lastname} Come Again & Again!!!`;
+}
+
+Thankyou();
