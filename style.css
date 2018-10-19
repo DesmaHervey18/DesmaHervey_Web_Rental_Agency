@@ -1,7 +1,16 @@
+body {
+    background-image: url("https://recharity.ca/wp-content/uploads/2014/03/Black-Box-black-box.jpg");
+}
+
 .big-container {
-    display: flex;
-    justify-content: center;
-    background: padding 20px;
+    /* display: flex;
+    justify-content: center; */
+    /* background: padding 20px; */
+    color: white;
+}
+
+.move {
+    margin-right: 20px;
 }
 
 .Rolls Royce {
@@ -11,8 +20,21 @@
 
 .main {
     background-image: center;
+    background: none;
 }
 
 .card {
-    height: 500px;
+    /* height: 500px; */
+    background: none;
+    border-image: url(https://data.whicdn.com/images/285305021/original.gif)
+        10px solid;
+}
+
+.border {
+    border: red 10px solid;
+}
+
+.main-container {
+    background: none;
+    color: white;
 }

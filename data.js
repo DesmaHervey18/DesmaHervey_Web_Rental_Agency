@@ -51,8 +51,8 @@ const PAGE_DATA = {
             stock: 2
         },
         {
-            imageURL: "images/Ferrari..jpg",
-            name: "Ferrari F80 2019",
+            imageURL: "images/Ferrarii.jpg",
+            name: "Ferrarii F80 2019",
             description:
                 "Ferrari F80 Concept. The Ferrari F80 Concept is a hybrid concept supercar manufactured\
                 by Ferrari and designed by Adriano Raeli. Its body is based on a Formula One car, has a V8 engine and\
