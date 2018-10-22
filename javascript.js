@@ -23,14 +23,20 @@ function refreshpage() {
 }
 
 function Thankyou() {
-    var payment = document.forms["payment-type"];
+    var payment = document.forms["payment"];
+    // console.log(document.forms["payment"].innerHTML);
     var firstInput = payment["first-name"];
-    var firstname = firstInput.value;
+    var firstName = firstInput.value;
     var lastInput = payment["last-name"];
-    var lastname = lastInput.value;
-    console.log(lastname);
+    var lastName = lastInput.value;
+    console.log(lastName);
     var formContainer = document.querySelector(".form-container");
-    formContainer.innerHTML = `Thank You ${firstname} ${lastname} Come Again & Again!!!`;
+    formContainer.innerHTML = `Thank You ${firstName} ${lastName} I Hope You Enjoy!!! <button onclick="refreshpage()" class="button btn-dark">Refresh</button>"`;
 }
 
-Thankyou();
+document
+    .querySelector("#submit-form")
+    .addEventListener("click", function(event) {
+        event.preventDefault();
+        Thankyou();
+    });
