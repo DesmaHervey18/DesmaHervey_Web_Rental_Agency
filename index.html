@@ -22,9 +22,10 @@
 </head>
 
 <body class="big-container" background="https://recharity.ca/wp-content/uploads/2014/03/Black-Box-black-box.jpg">
-    <!-- <a name="top"></a>
+    <a name="top"></a>
     <div>
         <div class="card m-3 p-3" id="template">
+
         </div>
         <div class="main-container pb-5 pt-5 pr-5 pl-5">
             <div>
@@ -37,7 +38,8 @@
                     <br>
                     <br>
                     <br>
-                    <form class="form-container" name="payment" onsubmit="Thankyou()">
+                    <form onsubmit="Thankyou()" class="form-container" name="payment">
+
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                                 <label for="validationDefault01">First name</label>
@@ -86,22 +88,38 @@
                         </div>
                         <div class="form-group">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <input class="form-control" type="checkbox" value="" id="invalidCheck2" required>
                                 <label class="form-check-label" for="invalidCheck2">
                                     Agree to terms and conditions
                                 </label>
+                                <br>
+                                <div>
+                                    <input type="radio" id="cash" name="drone" value="cash" checked />
+                                    <label for="cash">Cash</label>
+                                    <input type="radio" id="credit" name="drone" value="credit" />
+                                    <label for="credit">Credit</label>
+                                    <input type="radio" id="check" name="drone" value="check" />
+                                    <label for="check">Check</label>
+                                </div>
                             </div>
                         </div>
-                        <button class="btn btn-dark" type="submit">Submit form</button>
+                        <button class="btn btn-dark" id="submit-form" type="submit">Submit form</button>
                     </form>
+
                     <br>
+                    <!-- <div class="move-up">
+                            <br>
+                            <a id="topLink" href="#top">Home</a>
+                            <div class="danger">
+                            </div>
+                        </div> -->
+                    </form>
                     <div class="move-up">
                         <br>
                         <a id="topLink" href="#top">Home</a>
                         <div class="danger">
                         </div>
                     </div>
-                    </form>
                 </div>
             </div>
         </div>
@@ -110,138 +128,6 @@
 
 
     <script id="here" type="text/x-handlebars-template">
-        <h2>{{ title }}</h2>
-        <!-- <h3>{{ imageURL }}</h3> -->
-    <!-- <div class="d-flex">
-            <img src="{{ imageURL }}" width="220" height="150">
-        <div>
-        <div class="d-flex justify-content-start">
-            <div><p class="pl-3">
-                
-                    <b>Price: ${{ price }}</b>
-                </p>
-                <p class="pl-3">
-                    <b>Stock: {{ stock }}</b>
-                </p>
-                <p class="pl-3">
-                    <b>Description: {{ description }}</b>
-                </p></div>
-            <div class="move">
-                    <a href="#bottom"><button type="button" class="btn btn-dark">Rent</button></a>
-            </div>
-        </div>
-    </div>
-    </div> -->
-    <!-- </script> -->
-
-
-    <body class="big-container" background="https://recharity.ca/wp-content/uploads/2014/03/Black-Box-black-box.jpg">
-        <a name="top"></a>
-        <div>
-            <div class="card m-3 p-3" id="template">
-
-            </div>
-            <div class="main-container pb-5 pt-5 pr-5 pl-5">
-                <div>
-                    <div class="card" id="bottom">
-                        <div class="card-header">
-                            <b>
-                                <h1 class="text-center">Rental Information Document</h1>
-                            </b>
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-                        <form onsubmit="Thankyou()" class="form-container" name="payment">
-
-                            <div class="form-row">
-                                <div class="col-md-4 mb-3">
-                                    <label for="validationDefault01">First name</label>
-                                    <input name="first-name" type="text" class="form-control" id="validationDefault01"
-                                        placeholder="First name" value="" required>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <label for="validationDefault02">Last name</label>
-                                    <input name="last-name" type="text" class="form-control" id="validationDefault02"
-                                        placeholder="Last name" value="" required>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <label for="validationDefaultUsername">Username</label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                                        </div>
-                                        <input type="text" class="form-control" id="validationDefaultUsername"
-                                            placeholder="Username" aria-describedby="inputGroupPrepend2" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Infromation d-flex">
-                                <div class="col-md-6 mb-3">
-                                    <label for="validationDefault01">Address</label>
-                                    <input type="text" class="form-control" id="validationDefault01" placeholder="Address"
-                                        value="" required>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="validationDefault03">City</label>
-                                    <input type="text" class="form-control" id="validationDefault03" placeholder="City"
-                                        required>
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <label for="validationDefault04">State</label>
-                                    <input type="text" class="form-control" id="validationDefault04" placeholder="State"
-                                        required>
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <label for="validationDefault05">Zip</label>
-                                    <input type="text" class="form-control" id="validationDefault05" placeholder="Zip"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="form-check">
-                                    <input class="form-control" type="checkbox" value="" id="invalidCheck2" required>
-                                    <label class="form-check-label" for="invalidCheck2">
-                                        Agree to terms and conditions
-                                    </label>
-                                    <br>
-                                    <div>
-                                        <input type="radio" id="cash" name="drone" value="cash" checked />
-                                        <label for="cash">Cash</label>
-                                        <input type="radio" id="credit" name="drone" value="credit" />
-                                        <label for="credit">Credit</label>
-                                        <input type="radio" id="check" name="drone" value="check" />
-                                        <label for="check">Check</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="btn btn-dark" id="submit-form" type="submit">Submit form</button>
-                        </form>
-
-                        <br>
-                        <!-- <div class="move-up">
-                            <br>
-                            <a id="topLink" href="#top">Home</a>
-                            <div class="danger">
-                            </div>
-                        </div> -->
-                        </form>
-                        <div class="move-up">
-                            <br>
-                            <a id="topLink" href="#top">Home</a>
-                            <div class="danger">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-        <script id="here" type="text/x-handlebars-template">
         <h2>{{ title }}</h2>
         <!-- <h3>{{ imageURL }}</h3> -->
         <div class="d-flex">
@@ -266,4 +152,4 @@
     </div>
     </script>
 
-    </body>
+</body>
