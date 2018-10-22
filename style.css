@@ -54,10 +54,13 @@ body {
     padding: 15px;
     border-radius: 3%;
 } */
-#submit-group{
+#submit-group {
     color: white;
     background-color: #343a40;
     padding: 15px;
     border-radius: 3%;
 }
+
+.center-button {
+    justify-content: center;
 }

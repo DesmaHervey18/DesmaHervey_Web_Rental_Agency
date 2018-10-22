@@ -31,7 +31,7 @@ function Thankyou() {
     var lastName = lastInput.value;
     console.log(lastName);
     var formContainer = document.querySelector(".form-container");
-    formContainer.innerHTML = `Thank You ${firstName} ${lastName} I Hope You Enjoy!!! <button onclick="refreshpage()" class="button btn-dark">Refresh</button>"`;
+    formContainer.innerHTML = `<h1 class="text-center">Thank You ${firstName} ${lastName} I Hope You Enjoy!!!</h1>\n<button onclick="refreshpage()" class="button btn-dark">Refresh</button>`;
 }
 
 document
