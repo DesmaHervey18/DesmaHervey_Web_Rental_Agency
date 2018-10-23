@@ -86,68 +86,71 @@
                                     required>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <div class="form-check">
-                                <br>
-                                <div>
-                                    <input type="radio" id="cash" name="drone" value="cash" checked />
-                                    <label for="cash">Debit</label>
-                                    <input type="radio" id="credit" name="drone" value="credit" />
-                                    <label for="credit">Credit</label>
-                                    <input type="radio" id="check" name="drone" value="check" />
-                                    <label for="check">Check</label>
-                                    <input type="radio" id="credit" name="drone" value="credit" />
-                                    <label for="credit">Cash</label>
-                                </div>
-                            </div>
+                                <input class="form-control" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                    Agree to terms and conditions
+                                </label> -->
+                        <br>
+                        <div>
+                            <input type="radio" id="cash" name="drone" value="cash" checked />
+                            <label for="cash">Cash</label>
+                            <input type="radio" id="credit" name="drone" value="credit" />
+                            <label for="credit">Credit</label>
+                            <input type="radio" id="check" name="drone" value="check" />
+                            <label for="check">Check</label>
                         </div>
-                        <button class="btn btn-dark" id="submit-form" type="submit">Submit form</button>
-                    </form>
+                </div>
+            </div>
+            <button class="btn btn-dark" id="submit-form" type="submit">Submit form</button>
+            </form>
 
-                    <br>
-                    <!-- <div class="move-up">
+            <br>
+            <!-- <div class="move-up">
                             <br>
                             <a id="topLink" href="#top">Home</a>
                             <div class="danger">
                             </div>
                         </div> -->
-                    </form>
-                    <div class="move-up">
-                        <br>
-                        <a id="topLink" href="#top">Home</a>
-                        <div class="danger">
-                        </div>
-                    </div>
+            </form>
+            <div class="move-up">
+                <br>
+                <a id="topLink" href="#top">Home</a>
+                <div class="danger">
                 </div>
             </div>
         </div>
+    </div>
+    </div>
 
     </div>
 
 
-    <script id="here" type="text/x-handlebars-template">
+    <script class="cars" id="here" type="text/x-handlebars-template d-block">
         <h2>{{ title }}</h2>
         <!-- <h3>{{ imageURL }}</h3> -->
         <div class="d-flex">
             <img src="{{ imageURL }}" width="220" height="150">
         <div>
-        <div class="d-flex justify-content-start">
-            <div><p class="pl-3">
-                
-                    <b>Price: ${{ price }}</b>
-                </p>
-                <p class="pl-3">
-                    <b>Stock: {{ stock }}</b>
-                </p>
-                <p class="pl-3">
-                    <b>Description: {{ description }}</b>
-                </p></div>
-            <div class="move">
-                    <a href="#bottom"><button type="button" class="btn btn-dark">Rent</button></a>
+            <div class="d-flex justify-content-start">
+                <div>
+                    <p class="pl-3">
+                        <b>Price: ${{ price }}</b>
+                    </p>
+                    <p class="pl-3">
+                        <b>Stock: {{ stock }}</b>
+                    </p>
+                    <p class="pl-3">
+                        <b>Description: {{ description }}</b>
+                    </p></div>
+                <div class="move">
+                        <a href="#bottom"><button type="button" class="btn btn-dark">Rent</button></a>
+                </div>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
     </script>
 
 </body>
+</head>
