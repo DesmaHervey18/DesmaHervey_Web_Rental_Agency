@@ -48,7 +48,7 @@ const PAGE_DATA = {
                 Automobili Lamborghini tries to approach the electrification process in an unconventional way, with a concept\
                 car which is radical in the energy management, in the body, in the architecture and in design, in line with Lamborghini culture.",
             price: 1600,
-            stock: 2
+            stock: N / A
         },
         {
             imageURL: "images/Ferrarii.jpg",
@@ -69,8 +69,8 @@ const PAGE_DATA = {
                 all-wheel drive and a power-hungry 470-horsepower 5.0-liter supercharged V-8 with rear-wheel drive. Jaguar XJ\
                 models powered by the 5.0-liter powertrain will sprint from zero to 60 mph in a mind-blowing 4.9 seconds. Jaguar XJ50\
                 models will feature an eight-speed automatic transmission.",
-            price: 1700,
-            stock: 3
+            price: 600,
+            stock: 0
         }
     ]
 };
